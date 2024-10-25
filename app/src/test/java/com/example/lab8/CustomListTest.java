@@ -37,4 +37,12 @@ public class CustomListTest {
         boolean has_city=list.hasCity(new City("Estevan", "SK"));
         assertTrue(has_city);
     }
+    @Test
+    public void deleteCityTest(){
+        list=MockCityList();
+        list.addCity(new City("Estevan", "SK"));
+        list.addCity(new City("Red Deer", "AB"));
+        boolean del_city=list.deleteCity(new City("Estevan", "SK"));
+        assertTrue(del_city);
+    }
 }
