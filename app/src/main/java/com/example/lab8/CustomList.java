@@ -65,7 +65,7 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
     public boolean deleteCity(City city){
-        for (City existingCity : cities) {
+        for  (City existingCity : cities) {
 
             if (existingCity.getCityName().equals(city.getCityName()) &&
                     existingCity.getProvinceName().equals(city.getProvinceName())) {
